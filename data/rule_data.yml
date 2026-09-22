@@ -89,6 +89,11 @@ rule_data:
       (private/authoritative-source-only/restricted/public).
   - name: io.k8s.description
     description: Description of the container displayed in Kubernetes.
+  - name: maintainer
+    description: >-
+      The name and email of the maintainer (usually the submitter).
+      Should contain `@redhat.com` or `Red Hat`.
+    effective_on: "2026-11-02T00:00:00Z"
   - name: name
     description: Name of the Image or Container.
   - name: release
@@ -119,10 +124,6 @@ rule_data:
     effective_on: "2026-06-07T00:00:00Z"
   # https://enterprisecontract.dev/docs/ec-policies/release_policy.html#labels__optional_labels
   optional_labels:
-  - name: maintainer
-    description: >-
-      The name and email of the maintainer (usually the submitter).
-      Should contain `@redhat.com` or `Red Hat`.
   - name: summary
     description: A short description of the image.
 
