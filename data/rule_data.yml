@@ -117,6 +117,12 @@ rule_data:
     description: >-
       The CPE (Common Platform Enumeration) identifier for the product, e.g., cpe:/a:redhat:openshift_gitops:1.16::el8. This label is required for on-prem product releases.
     effective_on: "2026-06-07T00:00:00Z"
+  - name: com.redhat.tracker-url
+    description: >-
+      The URL of the issue tracker project where bugs against this container
+      should be reported by users, e.g. a Jira project URL or Bugzilla product
+      URL. This should correspond to the component named in com.redhat.component.
+    effective_on: "2026-11-02T00:00:00Z"
   # https://enterprisecontract.dev/docs/ec-policies/release_policy.html#labels__optional_labels
   optional_labels:
   - name: maintainer
